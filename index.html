@@ -1,0 +1,1076 @@
+<ul class="nav-menu">
+  <li>
+    <a href="#inicio"
+      ><!DOCTYPE html>
+      <html lang="pt-BR">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Dra. Maria Rodrigues | Neuropsicóloga</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" />
+          <style>
+            /* Cores principais */
+            :root {
+              --cor-primaria: #1a4d45; /* Verde escuro */
+              --cor-secundaria: #3a8f8f; /* Verde-água/turquesa */
+              --cor-destaque: #e6cba8; /* Bege/madeira claro */
+              --cor-texto: #333333;
+              --cor-texto-claro: #ffffff;
+              --cor-madeira: #b87333; /* Tom de madeira */
+              --fonte-principal: "Montserrat", sans-serif;
+              --fonte-secundaria: "Playfair Display", serif;
+            }
+
+            /* Reset CSS */
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+
+            body {
+              font-family: var(--fonte-principal);
+              color: var(--cor-texto);
+              line-height: 1.6;
+              background-color: var(--cor-secundaria);
+              overflow-x: hidden;
+              width: 100%;
+            }
+
+            img,
+            svg {
+              max-width: 100%;
+              height: auto;
+            }
+
+            /* Cabeçalho */
+            header {
+              background-color: var(--cor-primaria);
+              padding: 20px 0;
+              position: fixed;
+              width: 100%;
+              top: 0;
+              z-index: 1000;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Geral */
+            .container {
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 0 20px;
+              width: 100%;
+              box-sizing: border-box;
+            }
+
+            .navbar {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+
+            .logo {
+              font-family: var(--fonte-secundaria);
+              font-size: 24px;
+              font-weight: bold;
+              color: var(--cor-texto-claro);
+            }
+
+            .nav-menu {
+              display: flex;
+              list-style: none;
+            }
+
+            .nav-menu li {
+              margin-left: 30px;
+            }
+
+            .nav-menu a {
+              text-decoration: none;
+              color: var(--cor-texto-claro);
+              font-weight: 500;
+              transition: color 0.3s;
+            }
+
+            .nav-menu a:hover {
+              color: var(--cor-destaque);
+            }
+
+            .mobile-menu-btn {
+              display: none;
+              background: none;
+              border: none;
+              font-size: 24px;
+              cursor: pointer;
+              color: var(--cor-texto-claro);
+            }
+
+            /* Hero Section */
+            .hero {
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.8),
+                  rgba(0, 0, 0, 0.4)
+                ),
+                url("./cerebro-psicologia.avif") center/cover no-repeat;
+              background-color: var(--cor-secundaria);
+              height: 100vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              color: var(--cor-texto-claro);
+              padding: 0 20px;
+              margin-top: 80px;
+            }
+
+            .hero h1 {
+              font-family: var(--fonte-secundaria);
+              font-size: 48px;
+              margin-bottom: 20px;
+              max-width: 800px;
+            }
+
+            .hero p {
+              font-size: 20px;
+              max-width: 700px;
+              margin-bottom: 30px;
+            }
+
+            .btn {
+              display: inline-block;
+              background-color: var(--cor-primaria);
+              color: var(--cor-texto-claro);
+              padding: 15px 30px;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: 600;
+              transition: all 0.3s;
+            }
+
+            .btn:hover {
+              background-color: #0f3c36;
+              transform: translateY(-3px);
+            }
+
+            /* Sobre Mim */
+            .sobre {
+              padding: 100px 0;
+              background-color: #fff;
+            }
+
+            .section-title {
+              font-family: var(--fonte-secundaria);
+              font-size: 36px;
+              margin-bottom: 20px;
+              color: var(--cor-secundaria);
+              text-align: center;
+            }
+
+            .sobre-content {
+              display: flex;
+              align-items: center;
+              gap: 50px;
+              margin-top: 50px;
+              flex-wrap: wrap;
+            }
+
+            .sobre-img {
+              flex: 1;
+              min-width: 300px;
+              height: 700px;
+              background: url(".//neuropsicologa_maria.jpg") center/cover
+                no-repeat;
+              border-radius: 10px;
+            }
+
+            .sobre-text {
+              flex: 1;
+              min-width: 300px;
+            }
+
+            .sobre-text h3 {
+              font-family: var(--fonte-secundaria);
+              font-size: 28px;
+              margin-bottom: 20px;
+              color: var(--cor-primaria);
+            }
+
+            .sobre-text p {
+              margin-bottom: 20px;
+              font-size: 16px;
+              line-height: 1.8;
+            }
+
+            /* Serviços */
+            .servicos {
+              padding: 100px 0;
+              background-color: var(--cor-secundaria);
+              color: var(--cor-texto-claro);
+            }
+
+            .servicos-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 30px;
+              margin-top: 50px;
+              width: 100%;
+            }
+
+            .servico-card {
+              background-color: #fff;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s;
+            }
+
+            .servico-card:hover {
+              transform: translateY(-10px);
+            }
+
+            .servico-icon {
+              font-size: 40px;
+              color: var(--cor-secundaria);
+              margin-bottom: 20px;
+              text-align: center;
+            }
+
+            .servico-card h3 {
+              font-family: var(--fonte-secundaria);
+              font-size: 22px;
+              margin-bottom: 15px;
+              color: var(--cor-secundaria);
+              text-align: center;
+            }
+
+            .servico-card p {
+              font-size: 16px;
+              line-height: 1.7;
+              color:var(--cor-texto);
+              text-align:inherit;
+            }
+
+            /* Depoimentos */
+            .depoimentos {
+              padding: 100px 0;
+              background-color: #fff;
+            }
+
+            .depoimentos-slider {
+              margin-top: 50px;
+              display: flex;
+              overflow-x: auto;
+              scroll-snap-type: x mandatory;
+              gap: 30px;
+              padding: 20px 0;
+              width: 100%;
+              scrollbar-width: thin;
+              scrollbar-color: var(--cor-destaque) var(--cor-secundaria);
+            }
+
+            .depoimentos-slider::-webkit-scrollbar {
+              height: 8px;
+            }
+
+            .depoimentos-slider::-webkit-scrollbar-track {
+              background: var(--cor-secundaria);
+              border-radius: 10px;
+            }
+
+            .depoimentos-slider::-webkit-scrollbar-thumb {
+              background-color: var(--cor-destaque);
+              border-radius: 10px;
+            }
+
+            .depoimento-card {
+              background-color: var(--cor-secundaria);
+              padding: 30px;
+              border-radius: 10px;
+              min-width: 300px;
+              flex: 0 0 400px;
+              scroll-snap-align: start;
+              color: var(--cor-texto-claro);
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .depoimento-text {
+              font-style: italic;
+              margin-bottom: 20px;
+            }
+
+            .depoimento-autor {
+              font-weight: bold;
+              color: var(--cor-secundaria);
+            }
+
+            /* Contato */
+            .contato {
+              padding: 100px 0;
+              background-color: #fff;
+            }
+
+            .contato-container {
+              display: flex;
+              gap: 50px;
+              margin-top: 50px;
+            }
+
+            .contato-info {
+              flex: 1;
+            }
+
+            .contato-info h3 {
+              font-family: var(--fonte-secundaria);
+              font-size: 28px;
+              margin-bottom: 20px;
+              color: var(--cor-primaria);
+            }
+
+            .contato-info p {
+              margin-bottom: 20px;
+              font-size: 16px;
+              line-height: 1.8;
+            }
+
+            .contato-item {
+              display: flex;
+              align-items: center;
+              margin-bottom: 20px;
+            }
+
+            .contato-icon {
+              margin-right: 15px;
+              font-size: 20px;
+              color: var(--cor-destaque);
+            }
+
+            .contato-form {
+              flex: 1;
+              background-color: #fff;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .form-group {
+              margin-bottom: 20px;
+            }
+
+            .form-group label {
+              display: block;
+              margin-bottom: 5px;
+              font-weight: 500;
+            }
+
+            .form-control {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              font-family: var(--fonte-principal);
+              font-size: 16px;
+            }
+
+            textarea.form-control {
+              resize: vertical;
+              min-height: 150px;
+            }
+
+            .btn-submit {
+              background-color: var(--cor-secundaria);
+              color: var(--cor-texto-claro);
+              border: none;
+              padding: 15px 30px;
+              border-radius: 5px;
+              font-weight: 600;
+              cursor: pointer;
+              transition: all 0.3s;
+              font-family: var(--fonte-principal);
+              font-size: 16px;
+            }
+
+            .btn-submit:hover {
+              background-color: var(--cor-primaria);
+            }
+
+            /* Footer */
+            footer {
+              background-color: var(--cor-primaria);
+              color: var(--cor-texto-claro);
+              padding: 50px 0 20px;
+            }
+
+            .footer-content {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              gap: 30px;
+              margin-bottom: 40px;
+              width: 100%;
+            }
+
+            .footer-logo {
+              flex: 1;
+              min-width: 200px;
+            }
+
+            .footer-logo h3 {
+              font-family: var(--fonte-secundaria);
+              font-size: 24px;
+              margin-bottom: 20px;
+              color: var(--cor-secundaria);
+            }
+
+            .footer-logo p {
+              font-size: 14px;
+              line-height: 1.7;
+            }
+
+            .footer-links {
+              flex: 1;
+              min-width: 200px;
+            }
+
+            .footer-links h4 {
+              font-size: 18px;
+              margin-bottom: 20px;
+              color: var(--cor-secundaria);
+            }
+
+            .footer-links ul {
+              list-style: none;
+            }
+
+            .footer-links li {
+              margin-bottom: 10px;
+            }
+
+            .footer-links a {
+              text-decoration: none;
+              color: var(--cor-texto-claro);
+              transition: color 0.3s;
+            }
+
+            .footer-links a:hover {
+              color: var(--cor-secundaria);
+            }
+
+            .social-links {
+              display: flex;
+              gap: 15px;
+              margin-top: 20px;
+            }
+
+            .social-icon {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              background-color: #555;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: background-color 0.3s;
+            }
+
+            .social-icon:hover {
+              background-color: var(--cor-secundaria);
+            }
+
+            .copyright {
+              text-align: center;
+              padding-top: 20px;
+              border-top: 1px solid #555;
+              font-size: 14px;
+            }
+
+            /* Responsividade */
+            @media (max-width: 992px) {
+              .sobre-content {
+                flex-direction: column;
+              }
+
+              .sobre-img {
+                width: 100%;
+                margin-bottom: 30px;
+                max-width: 600px;
+              }
+
+              .contato-container {
+                flex-direction: column;
+              }
+
+              .hero h1 {
+                font-size: 36px;
+              }
+            }
+
+            @media (max-width: 768px) {
+              .nav-menu {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: var(--cor-secundaria);
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+              }
+
+              .nav-menu.active {
+                display: flex;
+              }
+
+              .nav-menu li {
+                margin: 10px 0;
+                text-align: center;
+              }
+
+              .mobile-menu-btn {
+                display: block;
+              }
+
+              .hero h1 {
+                font-size: 36px;
+              }
+
+              .hero p {
+                font-size: 18px;
+              }
+
+              .section-title {
+                font-size: 30px;
+              }
+            }
+
+            @media (max-width: 576px) {
+              .hero h1 {
+                font-size: 28px;
+              }
+
+              .hero p {
+                font-size: 16px;
+              }
+
+              .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+              }
+
+              .section-title {
+                font-size: 24px;
+              }
+
+              .sobre-text h3 {
+                font-size: 22px;
+              }
+
+              .footer-content {
+                flex-direction: column;
+              }
+            }
+          </style>
+        </head>
+        <body>
+          <!-- Header -->
+          <header>
+            <div class="container">
+              <nav class="navbar">
+                <div class="logo">Dra. Maria Rodrigues</div>
+                <ul class="nav-menu">
+                  <li><a href="#inicio">Início</a></li>
+                  <li><a href="#sobre">Sobre</a></li>
+                  <li><a href="#processo">Processo</a></li>
+                  <li><a href="#servicos">Serviços</a></li>
+                  <li><a href="#depoimentos">Depoimentos</a></li>
+                  <li><a href="#contato">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">☰</button>
+              </nav>
+            </div>
+          </header>
+
+          <!-- Hero Section -->
+          <section id="inicio" class="hero">
+            <h1>Avaliação Neuropsicológica & Terapia Comportamental</h1>
+            <p>
+              Abordagem especializada combinando Análise do Comportamento, DBT e
+              Avaliação Neuropsicológica
+            </p>
+            <a href="#contato" class="btn">Agende uma Consulta</a>
+          </section>
+
+          <!-- Sobre Mim -->
+          <section id="sobre" class="sobre">
+            <div class="container">
+              <h2 class="section-title">Sobre Mim</h2>
+              <div class="sobre-content">
+                <div class="sobre-img"></div>
+                <div class="sobre-text">
+                  <h3>Dra. Maria Rodrigues</h3>
+                  <p>
+                    Psicóloga clínica e neuropsicóloga, apaixonada por todas as
+                    coisas relacionadas ao cérebro e à mente.
+                  </p>
+                  <p>
+                    Graduada em Psicologia com especialização em Análise do
+                    Comportamento pelo pós-graduada em Neuropsicologia pelo
+                    Hospital Israelita Albert Einstein. Especialista em Terapia
+                    Comportamental Dialética (DBT), com anos de experiência em
+                    trabalhos com pacientes neurológicos e/ou neurodivergentes.
+                  </p>
+                  <p>
+                    Meu objetivo é proporcionar avaliações neuropsicológicas
+                    abrangentes e tratamentos comportamentais baseados em
+                    evidências que permitam compreender o funcionamento cerebral
+                    dos pacientes, identificar pontos fortes e dificuldades, e
+                    estabelecer planos de intervenção personalizados para
+                    melhorar a qualidade de vida.
+                  </p>
+                  <a href="#contato" class="btn">Entre em Contato</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Processo de Avaliação -->
+          <section
+            id="processo"
+            class="sobre"
+            style="
+              background-color: var(--cor-secundaria);
+              color: var(--cor-texto-claro);
+            "
+          >
+            <div class="container">
+              <h2 class="section-title" style="color: var(--cor-texto-claro)">
+                O Processo de Avaliação
+              </h2>
+              <div class="sobre-content">
+                <div class="sobre-text">
+                  <h3>O Processo de Avaliação</h3>
+                  <p>
+                    A proposta de uma avaliação neuropsicológica é avaliar e
+                    compreender o funcionamento do cérebro de um indivíduo no
+                    que se refere à cognição (pensamento), emoções e
+                    comportamento. Trata-se de uma avaliação abrangente que
+                    fornece uma estrutura clínica detalhada a respeito dos
+                    pontos fortes e às dificuldades de um indivíduo dentro
+                    desses três domínios, que podem ser fundamental para o
+                    diagnóstico, planejamento de tratamento e melhoria da
+                    qualidade de vida de indivíduos com condições neurológicas e
+                    psicológicas.
+                  </p>
+                  <p>
+                    Esta avaliação pode ser fundamental para o diagnóstico,
+                    planejamento de tratamento e melhoria da qualidade de vida
+                    de indivíduos com condições neurológicas e psicológicas.
+                  </p>
+                </div>
+                <div class="sobre-img"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Serviços -->
+          <section id="servicos" class="servicos">
+            <div class="container">
+              <h2 class="section-title">Meus Serviços</h2>
+              <div class="servicos-grid">
+                <div class="servico-card">
+                  <div class="servico-icon">🧠</div>
+                  <h3>Avaliação Neuropsicológica Abrangente</h3>
+                  <p>
+                    Esse tipo de avaliação é realizado quando um indivíduo
+                    deseja aprender sobre seu funcionamento cognitivo e
+                    psicológico para esclarecer diagnósticos e construir um
+                    plano de intervenção eficaz.
+                  </p>
+                </div>
+                <div class="servico-card">
+                  <div class="servico-icon">📚</div>
+                  <h3>Avaliação Psicoeducacional</h3>
+                  <p>
+                    Esse tipo de avaliação geralmente é realizado em crianças e
+                    adolescentes com dificuldades escolares, como também, em
+                    adultos que estão na faculdade/pós-graduação ou no mercado
+                    de trabalho. O teste psicoeducacional é utilizado para
+                    identificar pontos fortes e fracos acadêmicos, questões
+                    emocionais e comportamentais do individual, corroborando
+                    para encaminhamento de serviços e intervenções efetivas.
+                  </p>
+                </div>
+                <div class="servico-card">
+                  <div class="servico-icon">📊</div>
+                  <h3>Análise do Comportamento</h3>
+                  <p>
+                    Abordagem científica que analisa como o ambiente influencia
+                    o comportamento, desenvolvendo estratégias para promover
+                    mudanças positivas e duradouras em habilidades sociais,
+                    comunicação e comportamentos desafiadores.
+                  </p>
+                </div>
+                <div class="servico-card">
+                  <div class="servico-icon">🧘‍♀️</div>
+                  <h3>Terapia Comportamental Dialética (DBT)</h3>
+                  <p>
+                    Tratamento baseado em evidências que combina técnicas de
+                    mindfulness com estratégias comportamentais para ajudar no
+                    manejo de emoções intensas, redução de comportamentos
+                    autodestrutivos e melhoria dos relacionamentos
+                    interpessoais.
+                  </p>
+                </div>
+
+                <div class="servico-card">
+                  <div class="servico-icon">🔍</div>
+                  <h3>Diagnóstico Especializado</h3>
+                  <p>
+                    Avaliação e diagnóstico de condições neurológicas e
+                    psicológicas, incluindo TDAH, dislexia, autismo, transtornos
+                    emocionais e outros distúrbios cognitivos, com base em
+                    métodos baseados em evidências.
+                  </p>
+                </div>
+                <div class="servico-card">
+                  <div class="servico-icon">👨‍👩‍👧‍👦</div>
+                  <h3>Orientação Familiar</h3>
+                  <p>
+                    Suporte e orientação para familiares, utilizando princípios
+                    da análise do comportamento para desenvolver estratégias
+                    práticas de manejo comportamental e criar ambientes mais
+                    positivos e estruturados.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Depoimentos -->
+          <section id="depoimentos" class="depoimentos">
+            <div class="container">
+              <h2 class="section-title">Depoimentos</h2>
+              <div class="depoimentos-slider">
+                <div class="depoimento-card">
+                  <p class="depoimento-text">
+                    "Excelente profissional, muito gentil e atenciosa, fico
+                    muito feliz em ter profissional como você, que Deus abençoe
+                    sua vida. Super indico 👏👏👏"
+                  </p>
+                  <p class="depoimento-autor">- Lucilene Silva</p>
+                </div>
+                <div class="depoimento-card">
+                  <p class="depoimento-text">
+                    "Dra Maria só Deus pra te recompensar por seu trabalho com
+                    meu filho. Alegria imensa em vê meu filho interagindo
+                    naturalmente com outras pessoas. Sempre recomendarei seu
+                    trabalho que é incrível. Parabéns!! Obrigada."
+                  </p>
+                  <p class="depoimento-autor">- Ester Dantas</p>
+                </div>
+                <div class="depoimento-card">
+                  <p class="depoimento-text">
+                    "Dra Maria muito obrigada, serei eternamente grata a você
+                    pelo seu trabalho magnífico, hoje sou uma outra mulher,
+                    dinheiro nenhum pagaria seu trabalho exemplar. Muito
+                    obrigada mais uma vez! Deus te abençoe 🙌❤️"
+                  </p>
+                  <p class="depoimento-autor">- Raimunda</p>
+                </div>
+                <div class="depoimento-card">
+                  <p class="depoimento-text">
+                    "Uma profissional super competente e comprometida com as
+                    demandas, meu nível de satisfação não tem dimensão melhorei
+                    de forma significativa e estou muito realizada com as
+                    sessões, só tenho a agradecer a você."
+                  </p>
+                  <p class="depoimento-autor">- Clemonice Alves</p>
+                </div>
+                <div class="depoimento-card">
+                  <p class="depoimento-text">
+                    "Muitíssimo obrigado, pelo excepcional trabalho que você fez
+                    pelo meu querido filho, sou muito grata a senhora por tudo
+                    que fez com ele, e acredito com todos os seus pacientes, já
+                    que meu filho teve o melhor resultado que já vi depois de
+                    anos."
+                  </p>
+                  <p class="depoimento-autor">- Francisco Silva</p>
+                </div>
+                <div class="depoimento-card">
+                  <p class="depoimento-text">
+                    "Excelente profissional, bem acolhedora gentil, educada,
+                    estou completamente satisfeita com os resultados atingidos.
+                    Gratidão 🙌😀"
+                  </p>
+                  <p class="depoimento-autor">- Luciana Ana</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contato -->
+          <section id="contato" class="contato">
+            <div class="container">
+              <h2 class="section-title">Entre em Contato</h2>
+              <div class="contato-container">
+                <div class="contato-info">
+                  <h3>Vamos Conversar</h3>
+                  <p>
+                    Estou aqui para ajudar você ou seu familiar a compreender
+                    melhor o funcionamento cognitivo e emocional. Entre em
+                    contato para agendar uma avaliação ou esclarecer dúvidas
+                    sobre meus serviços.
+                  </p>
+                  <div class="contato-item">
+                    <div class="contato-icon">📱</div>
+                    <p>(11) 98765-4321</p>
+                  </div>
+                  <div class="contato-item">
+                    <div class="contato-icon">📧</div>
+                    <p>contato@mariarodrigues.com.br</p>
+                  </div>
+                  <div class="contato-item">
+                    <div class="contato-icon">📍</div>
+                    <p>
+                      Rua das Flores, 123 - Jardim Primavera<br />São Paulo, SP
+                    </p>
+                  </div>
+                  <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f">Fb</i></a>
+                    <a href="https://www.instagram.com/neuropsi.mariarodrigues/" class="social-icon"><i class="fab fa-instagram">Ig</i></a>
+                    <a href="https://wa.link/ch41vh" class="social-icon"><i class="fab fa-whatsapp">Wpp</i></a>
+                  </div>
+                </div>
+
+                <div class="contato-form">
+                  <form id="formulario-contato">
+                    <div class="form-group">
+                      <label for="nome">Nome</label>
+                      <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">E-mail</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="telefone">Telefone</label>
+                      <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="servico">Serviço de Interesse</label>
+                      <select id="servico" name="servico" class="form-control">
+                        <option value="">Selecione um serviço</option>
+                        <option value="analise-comportamento">
+                          Análise do Comportamento
+                        </option>
+                        <option value="dbt">
+                          Terapia Comportamental Dialética (DBT)
+                        </option>
+                        <option value="avaliacao-neuro">
+                          Avaliação Neuropsicológica
+                        </option>
+                        <option value="avaliacao-psico">
+                          Avaliação Psicoeducacional
+                        </option>
+                        <option value="diagnostico">
+                          Diagnóstico Especializado
+                        </option>
+                        <option value="orientacao">Orientação Familiar</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="mensagem">Mensagem</label>
+                      <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        class="form-control"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                      Enviar Mensagem
+                    </button>
+                    <div
+                      id="form-status"
+                      style="margin-top: 15px; display: none"
+                    ></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <footer>
+            <div class="container">
+              <div class="footer-content">
+                <div class="footer-logo">
+                  <h3>Dra. Maria Rodrigues</h3>
+                  <p>
+                    Neuropsicologia especializada para avaliar e compreender o
+                    funcionamento do cérebro, fornecendo diagnósticos precisos e
+                    planos de tratamento personalizados.
+                  </p>
+                </div>
+                <div class="footer-links">
+                  <h4>Links Rápidos</h4>
+                  <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                  </ul>
+                </div>
+                <div class="footer-links">
+                  <h4>Serviços</h4>
+                  <ul>
+                    <li><a href="#servicos">Análise do Comportamento</a></li>
+                    <li>
+                      <a href="#servicos">Terapia Comportamental Dialética</a>
+                    </li>
+                    <li><a href="#servicos">Avaliação Neuropsicológica</a></li>
+                    <li><a href="#servicos">Avaliação Psicoeducacional</a></li>
+                    <li><a href="#servicos">Orientação Familiar</a></li>
+                  </ul>
+                </div>
+                <div class="footer-links">
+                  <h4>Horário de Atendimento</h4>
+                  <ul>
+                    <li>Segunda a Sexta: 9h às 19h</li>
+                    <li>Sábado: 9h às 14h</li>
+                    <li>Domingo: Fechado</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="copyright">
+                <p>
+                  &copy; 2025 Dra. Maria Rodrigues - Neuropsicóloga. Todos os
+                  direitos reservados.
+                </p>
+              </div>
+            </div>
+          </footer>
+
+          <script>
+            // Menu Mobile
+            const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+            const navMenu = document.querySelector(".nav-menu");
+
+            mobileMenuBtn.addEventListener("click", () => {
+              navMenu.classList.toggle("active");
+            });
+
+            // Fechar menu ao clicar em um link
+            const navLinks = document.querySelectorAll(".nav-menu a");
+
+            navLinks.forEach((link) => {
+              link.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+              });
+            });
+
+            // Scroll suave para links de navegação
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+              anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute("href");
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                  top: targetElement.offsetTop - 80,
+                  behavior: "smooth",
+                });
+              });
+            });
+
+            // Controle do formulário com JavaScript
+            const form = document.getElementById("formulario-contato");
+            const formStatus = document.getElementById("form-status");
+
+            if (form) {
+              form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // Exibir mensagem de carregamento
+                formStatus.style.display = "block";
+                formStatus.innerHTML =
+                  '<p style="color: #3A8F8F;">Enviando mensagem, por favor aguarde...</p>';
+
+                // Coletar dados do formulário
+                const formData = new FormData(form);
+                const data = {};
+                formData.forEach((value, key) => {
+                  data[key] = value;
+                });
+
+                // Adicionar data e hora do envio
+                data["dataHora"] = new Date().toLocaleString();
+
+                // URL do seu Web App do Google Script (você precisará substituir pela sua URL)
+                const scriptURL =
+                  "https://script.google.com/macros/s/AKfycbxCh5Bocad0v9NVGtwErpa6iiNiYNgCv5RrH1CSkGSaVKVYddgqicMZ14MKf2Hr7el4/exec";
+
+                // Enviar dados para o Google Sheets
+                fetch(scriptURL, {
+                  method: "POST",
+                  mode: "no-cors",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(data),
+                })
+                  .then(() => {
+                    // Exibir mensagem de sucesso
+                    formStatus.innerHTML =
+                      '<p style="color: #3A8F8F;">Mensagem enviada com sucesso! Entraremos em contato em breve.</p>';
+                    form.reset(); // Limpa o formulário
+
+                    // Esconder a mensagem após alguns segundos
+                    setTimeout(() => {
+                      formStatus.style.display = "none";
+                    }, 5000);
+                  })
+                  .catch((error) => {
+                    // Exibir mensagem de erro
+                    console.error("Erro:", error);
+                    formStatus.innerHTML =
+                      '<p style="color: #ff3333;">Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.</p>';
+                  });
+              });
+            }
+          </script>
+        </body>
+      </html></a
+    >
+  </li>
+</ul>
