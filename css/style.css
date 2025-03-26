@@ -1,0 +1,623 @@
+/* Estilo base para o site de psicologia com tema de madeira e verde-água */
+/* Definição de cores e fontes */
+/* Cores principais */
+:root {
+  --cor-primaria: #1a4d45;
+  /* Verde escuro */
+  --cor-secundaria: #3a8f8f;
+  /* Verde-água/turquesa */
+  --cor-destaque: #e6cba8;
+  /* Bege/madeira claro */
+  --cor-texto: #333333;
+  --cor-texto-claro: #ffffff;
+  --cor-madeira: #b87333;
+  /* Tom de madeira */
+  --fonte-principal: "Montserrat", sans-serif;
+  --fonte-secundaria: "Playfair Display", serif;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  background-color: var(--cor-secundaria);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-primaria);
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Geral */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--cor-texto-claro);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--cor-texto-claro);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--cor-destaque);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--cor-texto-claro);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.4)),
+    url("/cerebro-psicologia.avif") center/cover no-repeat;
+  background-color: var(--cor-secundaria);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--cor-texto-claro);
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+.hero h1 {
+  font-family: var(--fonte-secundaria);
+  font-size: 48px;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #0f3c36;
+  transform: translateY(-3px);
+}
+
+/* Sobre Mim */
+.sobre {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.section-title {
+  font-family: var(--fonte-secundaria);
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--cor-secundaria);
+  text-align: center;
+}
+
+.sobre-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.sobre-img {
+  flex: 1;
+  min-width: 300px;
+  height: 700px;
+  background: url("/neuropsicologa_maria.jpg") center/cover no-repeat;
+  border-radius: 10px;
+}
+
+.sobre-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sobre-text h3 {
+  font-family: var(--fonte-secundaria);
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--cor-primaria);
+}
+
+.sobre-text p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Serviços */
+.servicos {
+  padding: 100px 0;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.servico-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.servico-card:hover {
+  transform: translateY(-10px);
+}
+
+.servico-icon {
+  font-size: 40px;
+  color: var(--cor-secundaria);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.servico-card h3 {
+  font-family: var(--fonte-secundaria);
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--cor-secundaria);
+  text-align: center;
+}
+
+.servico-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--cor-texto);
+  text-align: inherit;
+}
+
+/* Depoimentos */
+.depoimentos {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.depoimentos-slider {
+  margin-top: 50px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  padding: 20px 0;
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cor-destaque) var(--cor-secundaria);
+}
+
+.depoimentos-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.depoimentos-slider::-webkit-scrollbar-track {
+  background: var(--cor-secundaria);
+  border-radius: 10px;
+}
+
+.depoimentos-slider::-webkit-scrollbar-thumb {
+  background-color: var(--cor-destaque);
+  border-radius: 10px;
+}
+
+.depoimento-card {
+  background-color: var(--cor-secundaria);
+  padding: 30px;
+  border-radius: 10px;
+  min-width: 300px;
+  flex: 0 0 400px;
+  scroll-snap-align: start;
+  color: var(--cor-texto-claro);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.depoimento-text {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.depoimento-autor {
+  font-weight: bold;
+  color: var(--cor-secundaria);
+}
+
+/* Contato */
+.contato {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.contato-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.contato-info {
+  flex: 1;
+}
+
+.contato-info h3 {
+  font-family: var(--fonte-secundaria);
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--cor-primaria);
+}
+
+.contato-info p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contato-icon {
+  margin-right: 15px;
+  font-size: 20px;
+  color: var(--cor-destaque);
+}
+
+.contato-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.btn-submit {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+}
+
+.btn-submit:hover {
+  background-color: var(--cor-primaria);
+}
+
+/* Footer */
+footer {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  padding: 50px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo h3 {
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--cor-secundaria);
+}
+
+.footer-logo p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--cor-secundaria);
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--cor-texto-claro);
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--cor-secundaria);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: var(--cor-secundaria);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .sobre-content {
+    flex-direction: column;
+  }
+
+  .sobre-img {
+    width: 100%;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+
+  .contato-container {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .sobre-text h3 {
+    font-size: 22px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.whatsapp-btn,
+.instagram-btn,
+.linkedin-btn,
+.facebook-btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Espaçamento entre o ícone e o texto */
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+}
+
+.instagram-btn {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.facebook-btn {
+    background: linear-gradient(45deg, #1c46a1 0%, #194fc2 25%, #1a5dd2 50%, #1b6ee3 75%, #1c7ff4 100%);
+}
+
+.whatsapp-btn:hover,
+.instagram-btn:hover,
+.linkedin-btn:hover
+.facebook-btn:hover {
+    opacity: 0.9;
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+    /* Ajuste a margem como desejar */
+}

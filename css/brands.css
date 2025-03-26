@@ -1,0 +1,49 @@
+/*!
+ * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+
+:root {
+  --fa-style-family-brands: 'Font Awesome 6 Brands', sans-serif;
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype");
+}
+
+.fab,
+.fa-brands {
+  font-weight: 400;
+}
+
+.fab-monero,
+.fa-monero {
+  --fa-content: "\f3d0";
+}
+
+.fab-hooli,
+.fa-hooli {
+  --fa-content: "\f427";
+}
+
+.fab-yelp,
+.fa-yelp {
+  --fa-content: "\f1e9";
+}
+
+.fab-cc-visa,
+.fa-cc-visa {
+  --fa-content: "\f1f0";
+}
+
+/* Add other icons here, following the same pattern */
+
+.fab:before,
+.fa-brands:before {
+  content: var(--fa-content);
+}

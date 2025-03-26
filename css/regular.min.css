@@ -1,0 +1,39 @@
+/*!
+ * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+
+/*
+This code defines a custom element for the Font Awesome library.
+Custom elements are a web standard that allow you to define new HTML tags.
+In this case, the custom element is named "host" or "root".
+*/
+:host,:root{
+  /*
+  This rule sets the value of two CSS custom properties.
+  Custom properties allow you to define variables that can be reused throughout your CSS code.
+  The first custom property sets the value of the font family to "Font Awesome 6 Free".
+  The second custom property sets the value of the font weight to "normal" and the font style to "400".
+  */
+  --fa-style-family-classic:"Font Awesome 6 Free";
+  --fa-font-regular:normal 400 1em/1 "Font Awesome 6 Free"
+}
+
+/*
+This rule uses the @font-face CSS at-rule to define a new font face.
+The font face is named "Font Awesome 6 Free" and is defined using two font files:
+- fa-regular-400.woff2
+- fa-regular-400.ttf
+*/
+@font-face{
+  font-family:"Font Awesome 6 Free";
+  font-style:normal;
+  font-weight:400;
+  font-display:block;
+  src:url(../webfonts/fa-regular-400.woff2) format("woff2"),
+      url(../webfonts/fa-regular-400.ttf) format("truetype")
+}
+
+/*
+This rule sets the font weight of elements with the class "fa-regular" or "far"

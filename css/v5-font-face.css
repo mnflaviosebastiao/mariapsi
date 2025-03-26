@@ -1,0 +1,41 @@
+/*!
+ * Font Awesome Free 6.5.1 - A collection of icons for use on the web.
+ * License: https://fontawesome.com/license/free
+ * Copyright: 2023 Fonticons, Inc.
+ */
+
+/* Define the Font Awesome Brands font-family */
+@font-face {
+  /* 'Font Awesome Brands' font-family name */
+  font-family: 'Font Awesome Brands';
+  /* Prevent FOIT (Flash Of Invisible Text) */
+  font-display: block;
+  /* Default font style */
+  font-style: normal;
+  /* Default font weight */
+  font-weight: 400;
+  /* Include .woff2 and .ttf file formats for maximum compatibility */
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2"),
+       url("../webfonts/fa-brands-400.ttf") format("truetype");
+}
+
+/* Define the Font Awesome Free solid font-family */
+@font-face {
+  /* 'Font Awesome Free' font-family name */
+  font-family: 'Font Awesome Free';
+  /* Prevent FOIT (Flash Of Invisible Text) */
+  font-display: block;
+  /* Bold font style */
+  font-weight: 900;
+  /* Include .woff2 and .ttf file formats for maximum compatibility */
+  src: url("../webfonts/fa-solid-900.woff2") format("woff2"),
+       url("../webfonts/fa-solid-900.ttf") format("truetype");
+}
+
+/* Define the Font Awesome Free regular font-family */
+@font-face {
+  /* 'Font Awesome Free' font-family name */
+  font-family: 'Font Awesome Free';
+  /* Prevent FOIT (Flash Of Invisible Text) */
+  font-display: block;
+  /* Default

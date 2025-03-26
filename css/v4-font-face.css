@@ -1,0 +1,44 @@
+/*!
+ * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+
+/*
+Setting up the root variables for FontAwesome font family, font display, and font path.
+*/
+:root {
+  --fa-font-path: '../webfonts/';
+  --fa-font-family: 'FontAwesome';
+  --fa-font-display: block;
+}
+
+/*
+Defining the @font-face for the FontAwesome solid font with 900 weight and normal style.
+The woff2 and truetype formats are used for better browser support.
+*/
+@font-face {
+  font-family: var(--fa-font-family);
+  font-display: var(--fa-font-display);
+  src: url(var(--fa-font-path)'fa-solid-900.woff2') format("woff2"),
+       url(var(--fa-font-path)'fa-solid-900.ttf') format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*
+Defining the @font-face for the FontAwesome brands font with 400 weight and normal style.
+The woff2 and truetype formats are used for better browser support.
+*/
+@font-face {
+  font-family: var(--fa-font-family);
+  font-display: var(--fa-font-display);
+  src: url(var(--fa-font-path)'fa-brands-400.woff2') format("woff2"),
+       url(var(--fa-font-path)'fa-brands-400.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+Defining the @font-face for the FontAwesome regular font with 400 weight and normal style.
+The woff2
