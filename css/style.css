@@ -1,17 +1,17 @@
-/* Estilo base para o site de psicologia com tema de madeira e verde-água */
+/* Estilo base para o site de psicologia com tema branco e dourado */
 /* Definição de cores e fontes */
 /* Cores principais */
 :root {
-  --cor-primaria: #1a4d45;
-  /* Verde escuro */
-  --cor-secundaria: #3a8f8f;
-  /* Verde-água/turquesa */
-  --cor-destaque: #e6cba8;
-  /* Bege/madeira claro */
+  --cor-primaria: #d4af37;
+  /* Dourado */
+  --cor-secundaria: #ffffff;
+  /* Branco */
+  --cor-destaque: #b8860b;
+  /* Dourado escuro */
   --cor-texto: #333333;
   --cor-texto-claro: #ffffff;
-  --cor-madeira: #b87333;
-  /* Tom de madeira */
+  --cor-madeira: #d4af37;
+  /* Dourado */
   --fonte-principal: "Montserrat", sans-serif;
   --fonte-secundaria: "Playfair Display", serif;
 }
@@ -158,7 +158,7 @@ header {
   font-family: var(--fonte-secundaria);
   font-size: 36px;
   margin-bottom: 20px;
-  color: var(--cor-secundaria);
+  color: var(--cor-primaria);
   text-align: center;
 }
 
@@ -194,6 +194,7 @@ header {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.8;
+  color: var(--cor-texto);
 }
 
 /* Serviços */
@@ -291,11 +292,12 @@ header {
 .depoimento-text {
   font-style: italic;
   margin-bottom: 20px;
+  color: var(--cor-texto);
 }
 
 .depoimento-autor {
   font-weight: bold;
-  color: var(--cor-secundaria);
+  color: var(--cor-texto);
 }
 
 /* Contato */
