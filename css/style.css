@@ -235,7 +235,7 @@ header {
   font-family: var(--fonte-secundaria);
   font-size: 22px;
   margin-bottom: 15px;
-  color: var(--cor-secundaria);
+  color: var(--cor-texto);
   text-align: center;
 }
 
